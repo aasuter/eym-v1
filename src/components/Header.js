@@ -9,8 +9,8 @@ const Header = () => {
     return (
         <div>
             <div className='logo-container'>
-                <img src={logoLarge} className='logo-large'></img>
-                <img src={logoSmall} className='logo-small'></img>
+                <img src={logoLarge} className='logo-large' alt=''></img>
+                <img src={logoSmall} className='logo-small' alt=''></img>
             </div>
             <div className='social-media-container'>
                
