@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.logo-container {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 12%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sm-logo {
+  height: 6vh;
+}
+
+.logo-small{display: none;}
+
+@media(max-width: 768px){
+  .logo-large{
+    display:none;
   }
-  to {
-    transform: rotate(360deg);
+  .logo-small{
+    display:flex;
+    height: 20vh;
+  }
+  .social-media-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 13vh;
+    height: 20vh;
   }
 }
